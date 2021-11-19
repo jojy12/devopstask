@@ -11,6 +11,6 @@
 **sudo docker network inspect mynet
 # III. Ping containers using hostname
 **sudo docker exec -it alpinecontainer1 ash
-ping alpinecontainer2
-sudo docker exec -it alpinecontaine2 ash
-ping alpinecontainer1
+**ping alpinecontainer2
+**sudo docker exec -it alpinecontaine2 ash
+**ping alpinecontainer1
