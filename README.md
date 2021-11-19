@@ -1,3 +1,10 @@
+# DevOpsTask
+# Task 1
+#Create the target group with two AWS instances with the Ubuntu operating system
+* 
+
+
+
 # devopstask
 # Task2 Docker
 # I.Create a custom bridge network with name mynet
