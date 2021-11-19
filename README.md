@@ -9,33 +9,34 @@ $ sudo service nginx status //check status of nginx as running<br/>
 $ cd /var/www/html<br/>
 $ sudo rm present html file<br/>
 $ sudo nano index1.html<br/>
-$ copy paste the source code of provided html page and save and exit the editor
-$ sudo nano /etc/nginx/sites-available/default //changing the index to point to index.html file
-$ sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/  //this creates a link to the configuration file
-$ sudo nginx -t //checking the syntax
-$ sudo service nginx restart
+$ copy paste the source code of provided html page and save and exit the editor<br/>
+$ sudo nano /etc/nginx/sites-available/default //changing the index to point to index.html file<br/>
+$ sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/  //this creates a link to the configuration file<br/>
+$ sudo nginx -t //checking the syntax<br/>
+$ sudo service nginx restart<br/>
 
-Repeating the same steps of webserver configuration in Webserver2 with source code of index2.html
-Checking http://webserver1ipaddress/index1.html
-Checking http://webserver2ipaddress/index2.html
+Repeating the same steps of webserver configuration in Webserver2 with source code of index2.html<br/>
+Checking http://webserver1ipaddress/index1.html<br/>
+Checking http://webserver2ipaddress/index2.html<br/>
 
 # Creating Load Balancer - webserverLB
-Create Target Group named targetgroup1.Add webserver1 and webserver 2 to the target group.Attach target group to the webserverLB
-Check with DNS address of the Load Balancer
+Create Target Group named targetgroup1.<br/>
+Add webserver1 and webserver 2 to the target group.Attach target group to the webserverLB<br/>
+Check with DNS address of the Load Balancer<br/>
 
 # devopstask
 # Task2 Docker
 # I.Create a custom bridge network with name mynet
-*sudo docker network ls
-*sudo docker network create mynet
-*brctl show
+*sudo docker network ls<br/>
+*sudo docker network create mynet<br/>
+*brctl show<br/>
 # II.Create two containers with alpine image
-*sudo docker run -itd --network mynet --name alpinecontainer1 alpine ash
-*sudo docker run -itd --network mynet --name alpinecontainer2 alpine ash
-*sudo docker ps
-*sudo docker network inspect mynet
+*sudo docker run -itd --network mynet --name alpinecontainer1 alpine ash<br/>
+*sudo docker run -itd --network mynet --name alpinecontainer2 alpine ash<br/>
+*sudo docker ps<br/>
+*sudo docker network inspect mynet<br/>
 # III. Ping containers using hostname
-*sudo docker exec -it alpinecontainer1 ash
-*ping alpinecontainer2
-*sudo docker exec -it alpinecontainer2 ash
-*ping alpinecontainer1
+*sudo docker exec -it alpinecontainer1 ash<br/>
+*ping alpinecontainer2<br/>
+*sudo docker exec -it alpinecontainer2 ash<br/>
+*ping alpinecontainer1<br/>
