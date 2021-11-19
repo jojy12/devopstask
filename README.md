@@ -1,5 +1,5 @@
-devopstask
-**Task2 Docker
+# devopstask
+# Task2 Docker
 # I.Create a custom bridge network with name mynet
 *sudo docker network ls
 *sudo docker network create mynet
