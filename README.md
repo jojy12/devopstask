@@ -24,7 +24,6 @@ Create Target Group named targetgroup1.<br/>
 Add webserver1 and webserver 2 to the target group.Attach target group to the webserverLB<br/>
 Check with DNS address of the Load Balancer<br/>
 
-# devopstask
 # Task2 Docker
 # I.Create a custom bridge network with name mynet
 *sudo docker network ls<br/>
