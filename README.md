@@ -1,14 +1,14 @@
 # DevOpsTask
 # Task 1 AWS
 # Create the target group with two AWS instances with the Ubuntu operating system
-i.Open the AWS console.Goto service.Go to EC2.Launch 2 separate Instances-Webserver1 and Webserver2 with Ubuntu 20.04 AMI Image,Instance type t2.micro,Instance Details,Add storage Add EBS,Createor add security group with ssh and http inbound rules and Create keypair generates .pem key. 
-$  ssh ubuntu@ipaddress - SSH into Webserver1
-$ sudo apt update //update the repository
-$ sudo apt-get install nginx -y //Install nginx
-$ sudo service nginx status //check status of nginx as running
-$ cd /var/www/html
-$ sudo rm present html file
-$ sudo nano index1.html
+i.Open the AWS console.Goto service.Go to EC2.Launch 2 separate Instances-Webserver1 and Webserver2 with Ubuntu 20.04 AMI Image,Instance type t2.micro,Instance Details,Add storage Add EBS,Createor add security group with ssh and http inbound rules and Create keypair generates .pem key. <br/>
+$  ssh ubuntu@ipaddress - SSH into Webserver1<br/>
+$ sudo apt update //update the repository<br/>
+$ sudo apt-get install nginx -y //Install nginx<br/>
+$ sudo service nginx status //check status of nginx as running<br/>
+$ cd /var/www/html<br/>
+$ sudo rm present html file<br/>
+$ sudo nano index1.html<br/>
 $ copy paste the source code of provided html page and save and exit the editor
 $ sudo nano /etc/nginx/sites-available/default //changing the index to point to index.html file
 $ sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/  //this creates a link to the configuration file
